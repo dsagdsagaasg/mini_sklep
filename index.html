@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <title>MINI SKLEP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mini Sklep</h1>
+  <label for="currency">Wybierz walutę z listy:</label><br><br>
+  <select id="currency" onchange="przeliczCeny()"> <!--Tu możesz dodać kolejne opcje walutowe jeśli tylko API NBP je obsługuje-->
+    <option value="pln">PLN</option>
+    <option value="eur">EUR</option>
+    <option value="usd">USD</option>
+  </select>
+  <br><br>
+  <div id="products"> <!--Tu możesz dodać nowe produkty, jak dodajesz nowy to postaraj się zrobić tym samym schematem co inne produkty-->
+    <div class="product" data-price="100">
+      Produkt #1 — <span class="price"></span>
+    </div>
+    <div class="product" data-price="250">
+      Produkt #2 — <span class="price"></span>
+    </div>
+    <div class="product" data-price="75">
+      Produkt #3 — <span class="price"></span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
