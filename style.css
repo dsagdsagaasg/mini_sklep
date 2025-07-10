@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 
 h1 {
@@ -50,6 +51,7 @@ select {
   min-height: 180px;
   transition: transform 0.2s;
 }
+
 .product:hover {
   transform: scale(1.02);
 }
@@ -59,4 +61,20 @@ select {
   font-weight: bold;
   margin-top: 10px;
   color: #e74c3c;
+}
+
+.btn-koszyk {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-koszyk:hover {
+  background-color: #2980b9;
 }
